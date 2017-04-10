@@ -16,50 +16,10 @@
         android:layout_height="0.5dp"
         android:layout_above="@+id/main_bottom_bar"
         android:background="#000" />
--->
-    <!--<RadioGroup
-        android:id="@+id/main_rg_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="#fff"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/main_rb_embarrassing_things"
-            style="@style/MainRadioButtonTextStyle"
-            android:checked="true"
-            android:drawableTop="@drawable/selector_main_rb_things"
-            android:text="@string/embarrassing_things" />
-
-        <RadioButton
-            android:id="@+id/main_rb_circle"
-            style="@style/MainRadioButtonTextStyle"
-            android:drawableTop="@drawable/selector_main_rb_circle"
-            android:text="@string/embarrassing_circle" />
-
-        <RadioButton
-            android:id="@+id/main_rb_live"
-            style="@style/MainRadioButtonTextStyle"
-            android:drawableTop="@drawable/selector_main_rb_live"
-            android:text="@string/live" />
-
-        <RadioButton
-            android:id="@+id/main_rb_small_pager"
-            style="@style/MainRadioButtonTextStyle"
-            android:drawableTop="@drawable/selector_main_rb_small_pager"
-            android:text="@string/small_paper" />
-
-        <RadioButton
-            android:id="@+id/main_rb_me"
-            style="@style/MainRadioButtonTextStyle"
-            android:drawableTop="@drawable/selector_main_rb_me"
-            android:text="@string/me" />
-    </RadioGroup>-->
 <com.ashokvarma.bottomnavigation.BottomNavigationBar
     android:id="@+id/main_bottom_bar"
     android:layout_width="match_parent"
     android:layout_alignParentBottom="true"
     android:background="@color/blue"
-    android:layout_height="54dp"></com.ashokvarma.bottomnavigation.BottomNavigationBar>
+    android:layout_height="54dp"/>
 </RelativeLayout>
