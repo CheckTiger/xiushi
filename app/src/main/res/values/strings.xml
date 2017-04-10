@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">糗事百态</string>
+    <string name="embarrassing_things">糗事</string>
+    <string name="embarrassing_circle">糗友圈</string>
+    <string name="embarrassing">糗事</string>
+    <string name="live">直播</string>
+    <string name="small_paper">小纸条</string>
+    <string name="me">我</string>
+    <string name="exclusive">专享</string>
+    <string name="video">视频</string>
+    <string name="plain_text">纯文</string>
+    <string name="plain_image">纯图</string>
+    <string name="essence">精华</string>
+    <string name="through">穿越</string>
+    <string name="next_door">隔壁</string>
+    <string name="have_powder">已粉</string>
+    <string name="video_circle">视频</string>
+    <string name="topic">话题</string>
+    <string name="sign_in">签到</string>
+    <string name="live_room">直播间</string>
+    <string name="personal_center">个人中心</string>
+    <string name="frag_small">小纸条</string>
+    <string name="near_by_people">附近糗友</string>
+    <string name="qiuyoucircle_text">查看全文</string>
+    <string name="dynamic">动态</string>
+    <string name="today">今日</string>
+    <string name="topiclist">天梯（根据最近7天内活跃人数排名）</string>
+    <integer name="app_version_code">2</integer>
+    <string name="app_version">2.0.0</string>
+    <string name="proj_name">ShareSDK_TPL</string>
+    <string name="share_sdk">Share SDK</string>
+    <string name="login_with_wechat">用微信登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="if_register_needed">如果您需要注册功能…</string>
+    <string name="after_auth">一般来说第三方登录时，第三方平台已经为您完成用户身份校验，您可以放心让用户登录。\n\n但如果您需要判断用户是否为新用户，可以在授权操作完成后，将用户的信息通过字段“HashMap userInfo”携带给login方法。客户端通过“String userId”执行登录请求，如果服务端判定此userId为未注册用户，可以将userInfo发送给注册接口，获取用户在此平台上的昵称、头像等数据，然后执行注册</string>
+    <string name="ok">确定</string>
+    <string name="login_qq">使用QQ账号登录</string>
+    <string name="login_weixin">使用微信账号登录</string>
+    <string name="login_weibo">使用微博账号登录</string>
+    <string name="login">使用合作账号登录/注册</string>
+    <string name="sm_item_auth">ShareSDK授权demo</string>
+    <string name="not_yet_authorized">尚未授权</string>
+    <string name="close_info_dialog">关闭信息界面</string>
+    <string name="login_to_format">登陆到%s</string>
+    <string name="remove_to_format">注销%s登录</string>
+    <string name="remove_to_format_success">成功移除%s登录信息</string>
+    <string name="register_key_user_icon">头像:</string>
+    <string name="register_key_user_name">昵称:</string>
+    <string name="register_key_user_gender">性别:</string>
+    <string name="register_key_user_UID">U I D:</string>
+    <string name="register_key_user_mail">邮箱:</string>
+    <string name="register_key_user_password">密码:</string>
+    <string name="register_user_info">用户信息</string>
+    <string name="register_up">登录</string>
+    <string name="register_girl">女</string>
+    <string name="register_boy">男</string>
+    <string name="register_UserID">UserID不能修改</string>
+    <string name="tpl_no_sdcard">sdcard 卡不存在</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="buffering">缓冲中</string>
+
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="_drawable_mediacontroller_mute02">\@drawable/mediacontroller_mute02</string>
+
+    <string name="player_option">播 放 选 项</string>
+
+</resources>

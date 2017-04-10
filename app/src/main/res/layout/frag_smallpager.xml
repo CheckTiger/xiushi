@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        >
+
+        <ImageView
+            android:id="@+id/small_iv_left"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="5dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_ab_qiushi"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/small_tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/frag_small"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/small_iv_left"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/small_iv_friend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_im_small"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/small_iv_add"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"/>
+        <ImageView
+            android:id="@+id/small_iv_add"
+            style="@style/CommonAddSign"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_no_content_grey"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录后才能和老司机们聊天呐"
+                android:textColor="#ccc"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="56dp"
+                android:background="@drawable/my_content_pass_icon"
+                android:layout_marginTop="10dp"
+                android:text="去登录/注册"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

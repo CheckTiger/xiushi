@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/item_essence_details_user_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_add_qiuyou"
+        android:layout_marginRight="10dp"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/item_essence_details_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ffffffffffffffffffff"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/qiuyoucircle_like"
+                android:layout_toLeftOf="@+id/item_essence_details_count"
+                />
+            <TextView
+                android:id="@+id/item_essence_details_count"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:text="2"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/item_essence_details_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="10000"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

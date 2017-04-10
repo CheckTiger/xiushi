@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/item_exclusive_iv_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_add_qiuyou" />
+
+        <TextView
+            android:id="@+id/item_exclusive_tv_user_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:text="布说再见"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/item_exclusive_iv_hot_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_rss_hot"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/item_exclusive_iv_refresh"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/live_flower"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_exclusive_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/light_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_exclusive_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="好笑"
+            android:textColor="@color/DarkGray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_exclusive_tv_amount"
+            style="@style/ExclusiveTextViewShow" />
+
+        <TextView
+            style="@style/ExclusiveTextViewShow"
+            android:text="评论" />
+
+        <TextView
+            android:id="@+id/item_exclusive_tv_comment"
+            style="@style/ExclusiveTextViewShow" />
+
+        <TextView
+            style="@style/ExclusiveTextViewShow"
+            android:text="分享" />
+
+        <TextView
+            android:id="@+id/item_exclusive_tv_share"
+            style="@style/ExclusiveTextViewShow" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/item_exclusive_btn_support"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/support_smile"
+                android:button="@null" />
+
+
+            <RadioButton
+                android:id="@+id/item_exclusive_btn_cry"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/item_exclusive_btn_support"
+                android:background="@drawable/unsupport_cry"
+                android:button="@null" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/radio_group"
+            android:background="@drawable/operation_comments" />
+
+        <Button
+            android:id="@+id/item_exclusive_btn_share"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/operation_more" />
+    </RelativeLayout>
+</LinearLayout>

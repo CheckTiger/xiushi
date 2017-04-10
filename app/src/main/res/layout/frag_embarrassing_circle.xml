@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/embarrassing_circle_btn_next"
+                style="@style/CommonFragmentTitleTextStyle"
+                android:text="@string/next_door" />
+
+            <Button
+                android:id="@+id/embarrassing_circle_btn_have_powder"
+                style="@style/CommonFragmentTitleTextStyle"
+                android:text="@string/have_powder" />
+
+            <Button
+                android:id="@+id/embarrassing_circle_btn_video_circle"
+                style="@style/CommonFragmentTitleTextStyle"
+                android:text="@string/video_circle" />
+
+            <Button
+                android:id="@+id/embarrassing_circle_btn_topic"
+                style="@style/CommonFragmentTitleTextStyle"
+                android:text="@string/topic" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/embarrassing_circle_btn_sign_in"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/embarrassing_circle_iv_add"
+            android:background="@drawable/embarrassing_circle_sign_in"
+            android:backgroundTint="#fff"
+            android:drawableLeft="@drawable/qiuyou_circle_foot"
+            android:text="@string/sign_in"
+            android:textColor="@color/yellow"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/embarrassing_circle_iv_add"
+            style="@style/CommonAddSign"
+            />
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/embarrassing_circle_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:id="@+id/embarrassing_circle_ll_hello"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:background="@drawable/day_nearby_icon_location"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无法获取您的位置信息，您可以通过以下操作提高附近的位置精度：在位置设置中打开GPS和无线网络"
+            android:textColor="#ccc"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/embarrassing_circle_btn_open"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#0cf"
+            android:layout_marginTop="10dp"
+            android:text="打开定位服务"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+</LinearLayout>
+</LinearLayout>

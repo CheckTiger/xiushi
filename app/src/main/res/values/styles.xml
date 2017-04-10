@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/yellow</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--糗事,糗友圈页面的标题样式-->
+    <style name="CommonFragmentTitleTextStyle">
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:textColor">@color/lightWhite</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--底部Button的显示样式-->
+    <style name="MainRadioButtonTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">@drawable/selector_main_text_color</item>
+        <item name="android:textSize">@dimen/mainRadioButton</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+    </style>
+
+    <!--页面标题显示的加号样式-->
+    <style name="CommonAddSign">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:src">@drawable/submit</item>
+    </style>
+
+
+    <!--糗事:专享一些TextView显示样式-->
+    <style name="ExclusiveTextViewShow">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/DarkGray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+ <!--"我"页面TextView 显示样式-->
+    <style name="MeTextViewShowMessage">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+  <!--"我"页面LinearLayout1显示样式-->
+    <style name="MeLinearLayoutOneShow">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--"我"页面LinearLayout2显示样式-->
+    <style name="MeLinearLayoutTwoShow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customization related to
+            backward-compatibility can go here.
+         -->
+    </style>
+    <!-- Application theme. -->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/nemediacontroller_progressbar</item>
+        <item name="android:indeterminateDrawable">@drawable/nemediacontroller_progressbar</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:thumb">@drawable/nemediacontroller_progressbar_thumb</item>
+        <item name="android:thumbOffset">8dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+    </style>
+
+    <style name="MediaController_Text">
+        <item name="android:textColor">#bfbfbf</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

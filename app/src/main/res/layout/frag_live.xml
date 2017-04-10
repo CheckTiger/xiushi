@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow">
+
+        <Button
+            android:id="@+id/live_btn_all"
+            style="@style/CommonFragmentTitleTextStyle"
+            android:text="@string/live_room" />
+
+        <ImageView
+            android:id="@+id/live_iv_add"
+            style="@style/CommonAddSign"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/live_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"></GridView>
+</LinearLayout>
