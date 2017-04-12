@@ -1,4 +1,4 @@
-package com.lanou.olddriver.adapter;
+package com.sxh.olddriver.adapter;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -12,11 +12,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.lanou.olddriver.R;
-import com.lanou.olddriver.bean.CircleVideo;
-import com.lanou.olddriver.utils.UrlUtils;
-import com.lanou.olddriver.view.ImageLoaderUtils;
-import com.lanou.olddriver.view.NEVideoView;
+import com.sxh.olddriver.R;
+import com.sxh.olddriver.bean.CircleVideo;
+import com.sxh.olddriver.utils.UrlUtils;
+import com.sxh.olddriver.view.ImageLoaderUtils;
+import com.sxh.olddriver.view.NEVideoView;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 

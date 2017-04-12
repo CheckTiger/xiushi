@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lanou.olddriver">
+    package="com.sxh.olddriver">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -46,7 +46,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.GuideActivity"
+        <activity android:name="com.sxh.olddriver.activity.GuideActivity"
             >
 
             <intent-filter>
@@ -55,12 +55,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.EssenceDetailsActivity"/>
-        <activity android:name=".activity.TextDetailsActivity"/>
-        <activity android:name=".activity.ImageDetailsActivity"/>
-        <activity android:name=".activity.ThroughDetailsActivity"/>
-        <activity android:name=".activity.NextDoorActivity"/>
+        <activity android:name="com.sxh.olddriver.activity.MainActivity"/>
+        <activity android:name="com.sxh.olddriver.activity.EssenceDetailsActivity"/>
+        <activity android:name="com.sxh.olddriver.activity.TextDetailsActivity"/>
+        <activity android:name="com.sxh.olddriver.activity.ImageDetailsActivity"/>
+        <activity android:name="com.sxh.olddriver.activity.ThroughDetailsActivity"/>
+        <activity android:name="com.sxh.olddriver.activity.NextDoorActivity"/>
 
         <activity
             android:name="com.mob.tools.MobUIShell"
@@ -85,7 +85,7 @@
         </activity>
         <!--微信分享回调 -->
         <activity
-            android:name=".wxapi.WXEntryActivity"
+            android:name="com.sxh.olddriver.wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -94,9 +94,9 @@
         <activity android:name="demo.login.RegisterPage"/>
         <activity android:name="demo.wxapi.WXEntryActivity"/>
         <activity android:name="demo.LoginPage"/>
-        <activity android:name=".activity.NavigationActivity"/>
+        <activity android:name="com.sxh.olddriver.activity.NavigationActivity"/>
         <activity
-            android:name=".activity.LiveStreamAcitvity"
+            android:name="com.sxh.olddriver.activity.LiveStreamAcitvity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden|screenSize"

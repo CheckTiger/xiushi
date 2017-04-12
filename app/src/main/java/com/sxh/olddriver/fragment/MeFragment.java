@@ -1,4 +1,4 @@
-package com.lanou.olddriver.fragment;
+package com.sxh.olddriver.fragment;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,9 +9,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.lanou.olddriver.R;
-import com.lanou.olddriver.activity.MainActivity;
-import com.lanou.olddriver.db.MyDBHelper;
+import com.sxh.olddriver.R;
+import com.sxh.olddriver.activity.MainActivity;
+import com.sxh.olddriver.db.MyDBHelper;
 
 import java.util.ArrayList;
 import java.util.HashMap;

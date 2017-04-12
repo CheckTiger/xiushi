@@ -96,12 +96,12 @@
                     android:layout_below="@+id/id_circlevideo_endtext"
 
                     >
-                    <com.lanou.olddriver.view.NEVideoView
+                    <com.sxh.olddriver.view.NEVideoView
                         android:id="@+id/circlevideo_videoView1"
                         android:layout_margin="5dp"
                         android:layout_height="300dp"
                         android:layout_width="match_parent">
-                    </com.lanou.olddriver.view.NEVideoView>
+                    </com.sxh.olddriver.view.NEVideoView>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.lanou.olddriver.view.PullToRefreshView
+    <com.sxh.olddriver.view.PullToRefreshView
         android:id="@+id/plain_text_pull_to_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -12,5 +12,5 @@
             android:id="@+id/plain_text_list_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"></ListView>
-    </com.lanou.olddriver.view.PullToRefreshView>
+    </com.sxh.olddriver.view.PullToRefreshView>
 </LinearLayout>

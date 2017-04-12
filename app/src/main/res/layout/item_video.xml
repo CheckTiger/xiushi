@@ -67,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp" />
-    <com.lanou.olddriver.view.NEVideoView
+    <com.sxh.olddriver.view.NEVideoView
         android:id="@+id/item_ne_video_view"
         android:layout_width="match_parent"
         android:layout_height="300dp" />

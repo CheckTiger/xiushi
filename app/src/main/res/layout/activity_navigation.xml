@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lanou.olddriver.activity.NavigationActivity">
+    tools:context="com.sxh.olddriver.activity.NavigationActivity">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/navi_vp"

@@ -1,4 +1,4 @@
-package com.lanou.olddriver.activity;
+package com.sxh.olddriver.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,12 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
-import com.lanou.olddriver.R;
-import com.lanou.olddriver.fragment.EmbarrassingCircleFragment;
-import com.lanou.olddriver.fragment.EmbarrassingThingsFragment;
-import com.lanou.olddriver.fragment.LiveFragment;
-import com.lanou.olddriver.fragment.MeFragment;
-import com.lanou.olddriver.fragment.SmallPagerFragment;
+import com.sxh.olddriver.R;
+import com.sxh.olddriver.fragment.EmbarrassingCircleFragment;
+import com.sxh.olddriver.fragment.EmbarrassingThingsFragment;
+import com.sxh.olddriver.fragment.LiveFragment;
+import com.sxh.olddriver.fragment.MeFragment;
+import com.sxh.olddriver.fragment.SmallPagerFragment;
 
 import java.util.ArrayList;
 

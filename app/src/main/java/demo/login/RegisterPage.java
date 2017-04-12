@@ -20,10 +20,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.lanou.olddriver.R;
-import com.lanou.olddriver.activity.MainActivity;
-import com.lanou.olddriver.db.MyDBHelper;
-import com.lanou.olddriver.utils.sys.Utilss;
+import com.sxh.olddriver.R;
+import com.sxh.olddriver.activity.MainActivity;
+import com.sxh.olddriver.db.MyDBHelper;
+import com.sxh.olddriver.utils.sys.Utilss;
 
 import java.io.File;
 import java.io.FileNotFoundException;

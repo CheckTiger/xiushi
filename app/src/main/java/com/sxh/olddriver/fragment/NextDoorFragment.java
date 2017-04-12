@@ -1,13 +1,12 @@
-package com.lanou.olddriver.fragment;
-
+package com.sxh.olddriver.fragment;
 import android.view.View;
 import android.widget.ListView;
 
-import com.lanou.olddriver.R;
-import com.lanou.olddriver.adapter.CircleVideoAdapter;
-import com.lanou.olddriver.bean.CircleVideo;
-import com.lanou.olddriver.db.UtilsDB;
-import com.lanou.olddriver.view.PullToRefreshView;
+import com.sxh.olddriver.R;
+import com.sxh.olddriver.adapter.NextDoorAdapter;
+import com.sxh.olddriver.bean.Data;
+import com.sxh.olddriver.db.UtilsDB;
+import com.sxh.olddriver.view.PullToRefreshView;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.ResponseInfo;
@@ -16,11 +15,10 @@ import com.lidroid.xutils.http.client.HttpRequest;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * Created by user on 2016/7/25.
  */
-public class CircleVideoFragment extends BaseFragment {
+public class NextDoorFragment extends BaseFragment {
     //	当前请求数据为第几页
     int page=0;
     //直接请求常量
@@ -30,27 +28,26 @@ public class CircleVideoFragment extends BaseFragment {
     //上拉加载请求常量
     public static final int LOAD=2;
     private PullToRefreshView pull;
-    CircleVideoAdapter adapter;
-    List<CircleVideo.DataBean> circlevideo_list=new ArrayList<CircleVideo.DataBean>();
-    ListView circlevideo_listview;
-    //ArrayList<HashMap<String, String>> list2;
+    List<Data> nextDoorlist=new ArrayList<Data>();
+    NextDoorAdapter adapter;
+    ListView next_door_list_view;
+
     @Override
     public View initView() {
-        View view=View.inflate(getActivity(), R.layout.circlevideo,null);
-        pull= (PullToRefreshView) view.findViewById(R.id.id_circlevideo_pull);
-        circlevideo_listview= (ListView) view.findViewById(R.id.id_circlevideo_list);
-        adapter=new CircleVideoAdapter(circlevideo_list,getActivity());
-        circlevideo_listview.setAdapter(adapter);
+        View view = View.inflate(getActivity(), R.layout.nextdoor,null);
+        next_door_list_view = (ListView)view.findViewById(R.id.list_embarrassing);
+        pull= (PullToRefreshView)view.findViewById(R.id.id_embarrassing_pull);
+        adapter=new NextDoorAdapter(nextDoorlist,getActivity());
+        next_door_list_view.setAdapter(adapter);
         return view;
     }
-
-    @Override
-    public void setData() {
-        getNetData(0);
-        //调用pull绑定监听事件的方法
-        setPullListener();
-    }
-
+    /**
+     * 获取网络的糗事列表数据
+     * 判断当前请求类型：
+     *  0：直接请求
+     *  1：下拉刷新
+     *  2：上拉加载
+     * */
     private void getNetData(final int type) {
         switch (type) {
             case REQUEST:
@@ -65,7 +62,7 @@ public class CircleVideoFragment extends BaseFragment {
             default:
                 break;
         }
-        String url="http://circle.qiushibaike.com/article/video/list?page="+page;
+        String url="http://circle.qiushibaike.com/article/nearby/list?page="+page+"&count=30";
         HttpUtils utils=new HttpUtils();
 		/*
 		 * 发出请求并且回调
@@ -76,27 +73,27 @@ public class CircleVideoFragment extends BaseFragment {
         utils.send(HttpRequest.HttpMethod.GET, url, new RequestCallBack<String>() {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
+
                 String result=responseInfo.result;
-               // MyDBHelper.getInstances(getActivity()).insert("nextdoorcommen",result);
-                UtilsDB.getCirclevideoList(getActivity(),result);
+                UtilsDB.getNextDoorList(getActivity(),result);
                 if (type==LOAD) {
-                    circlevideo_list.addAll(UtilsDB.getDataCircleVideo(getActivity()));
+                    nextDoorlist.addAll(UtilsDB.getDataNextDoor(getActivity()));
                     pull.onFooterLoadFinish();
                 }else{
-                    circlevideo_list=UtilsDB.getDataCircleVideo(getActivity());
+                    nextDoorlist=UtilsDB.getDataNextDoor(getActivity());
                     pull.onHeaderRefreshFinish();
                 }
-                if (circlevideo_list!=null){
-                    adapter.setList(circlevideo_list);
+                if (nextDoorlist!=null){
+                    adapter.setList(nextDoorlist);
                 }else {
                     return;
                 }
             }
             @Override
             public void onFailure(HttpException e, String s) {
-                circlevideo_list=UtilsDB.getDataCircleVideo(getActivity());
-                if (circlevideo_list!=null){
-                    adapter.setList(circlevideo_list);
+                nextDoorlist=UtilsDB.getDataNextDoor(getActivity());
+                if (nextDoorlist!=null){
+                    adapter.setList(nextDoorlist);
                 }else {
 
                     return;
@@ -125,4 +122,12 @@ public class CircleVideoFragment extends BaseFragment {
             }
         });
     }
+
+    @Override
+    public void setData() {
+        getNetData(0);
+        //调用pull绑定监听事件的方法
+        setPullListener();
+    }
 }
+
